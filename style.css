@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+.navbar {
+    background: rgb(22, 8, 8);
+    color: rgb(114, 177, 177);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    width: 30%;
+    font-size: 30px;
+    margin: 10px 10px 0 0;
+}
+
+.logo span {
+    color: rgb(208, 230, 250);
+}
+
+.search {
+    margin: 20px 10px 10px 10px;
+}
+
+.search input {
+    background: rgba(82, 81, 81, 0.37);
+    border: 2px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.list {
+    float: right;
+    margin: 20px 10px 10px 10px;
+}
+
+.list ul li a {
+    padding: 10px;
+    color: azure;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.list ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    margin: auto;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(39, 17, 66, 0.824);
+    /* position: absolute; */
+}
+
+.design {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.htext {
+    padding: 100px;
+    height: 80vh;
+    width: 50%;
+    text-align: center;
+    font-size: 100px;
+    color: aliceblue;
+}
+
+.htext .name {
+    color: rgb(3, 115, 134)
+}
+
+.slide {
+    margin: 10px;
+    width: 50%;
+    height: 80vh;
+    background-size: cover;
+    background-image: url("Screenshot_2022-03-12-14-02-12-896_com.instagram.android.jpg");
+    animation: slider 5s infinite linear;
+    border-radius: 30px;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("Screenshot_2022-03-12-14-02-12-896_com.instagram.android.jpg");
+    }
+    35% {
+        background-image: url("Screenshot_2022-03-11-20-51-54-971_com.instagram.android.jpg");
+    }
+    75% {
+        background-image: url("Screenshot_2022-03-12-14-02-05-181_com.instagram.android.jpg");
+    }
+}
+
+.ptext {
+    padding: 30px;
+    width: 70%;
+    margin: auto;
+    color: azure;
+}
+
+.work {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(248, 84, 84, 0.849);
+    padding: 30px;
+}
+
+.workCol {
+    width: 70%;
+    height: 25%;
+    margin: auto;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.25);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.workCol .heading {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+    text-transform: capitalize;
+    float: left;
+}
+
+.workText {
+    display: flex;
+    flex-direction: column;
+}
+
+.work img {
+    margin: 0px 10px 0px 0px;
+    height: 100px;
+    width: 100px;
+}
+
+.pricing {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(214, 234, 251);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.pricingContainer {
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(81, 81, 81, 0.35);
+    padding: 10px;
+    text-align: center;
+}
+
+.priceColContainer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.priceCol {
+    text-align: center;
+    line-height: 30px;
+    width: 30%;
+    height: 70%;
+    box-shadow: 5px 5px 10px 10px rgb(214, 214, 214);
+    border-radius: 20px;
+    padding: 40px;
+    align-content: center;
+    justify-items: center;
+    margin: auto 10px;
+}
+
+.priceCol .head {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.priceCol .price {
+    align-self: baseline;
+    text-align: end;
+    font-size: 20px;
+}
+
+.priceCol .price-btn {
+    color: white;
+    background-color: rgb(26, 157, 6);
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 0px;
+}
+
+.priceCol .head {
+    color: beige;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(127, 255, 212, 0.759);
+}
